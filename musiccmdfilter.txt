@@ -3,7 +3,7 @@
 	"left4dead2"
 	{
 		"Functions"
-        {
+		{
 			"Music::Play"
 			{
 				"signature"  "Music::Play"
@@ -11,28 +11,28 @@
 				"return"  "void"
 				"this"  "ignore"
 				"arguments"
-                {
-                    "SongString"
-                    {
-                        "type"    "charptr"
-                    }
-                    "EntIndex"
-                    {
-                        "type"    "int"
-                    }
-                    "intensity"
-                    {
-                        "type"    "float"
-                    } 
+				{
+					"SongString"
+					{
+						"type"    "charptr"
+					}
+					"EntIndex"
+					{
+						"type"    "int"
+					}
+					"intensity"
+					{
+						"type"    "float"
+					} 
 					"Survivors_Only"
-                    {
-                        "type"    "bool"
-                    }
+					{
+						"type"    "bool"
+					}
 					"Music_From_Entity"
-                    {
-                        "type"    "bool"
-                    }
-                }
+					{
+						"type"    "bool"
+					}
+				}
 			}
 		}
 		"Signatures"
