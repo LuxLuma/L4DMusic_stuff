@@ -1,0 +1,36 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"MemPatches"
+		{
+			"CDirectorChallengeMode::ShouldPlayBossMusic()::music_patch"
+			{
+				"signature"			"CDirectorChallengeMode::ShouldPlayBossMusic"
+				"linux"
+				{
+					"offset"		"26h"
+					"verify"		"\xB8\x01\x00\x00\x00"
+					"patch"			"\xB8\x00"
+					
+				}
+				"windows"
+				{
+					"offset"		"23h"
+					"verify"		"\xB0\x01"
+					"patch"			"\xB0\x00"
+				}
+			}
+		}
+		"Signatures"
+		{
+			"CDirectorChallengeMode::ShouldPlayBossMusic"
+			{
+				"library"		"server"
+				"linux"			"@_ZNK22CDirectorChallengeMode19ShouldPlayBossMusicEPb"
+				"windows"		"\x55\x8B\xEC\x80\x79\x01\x00\x74\x2A\xA1"
+								/* 55 8B EC 80 79 01 00 74 ? A1 */
+			}
+		}
+	}
+}
